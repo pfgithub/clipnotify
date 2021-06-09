@@ -1,7 +1,7 @@
 const std = @import("std");
 const Builder = std.build.Builder;
 
-pub fn addBuildOptions(b: *Builder, mode: var, exe: var) void {
+pub fn addBuildOptions(b: *Builder, mode: anytype, exe: anytype) void {
     exe.linkLibC();
     exe.linkSystemLibrary("X11");
     exe.linkSystemLibrary("Xfixes");

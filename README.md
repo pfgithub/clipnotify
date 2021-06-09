@@ -12,3 +12,11 @@ while clipnotify; do notify-send "Clipboard Changed" -i notifications -t 300; do
 ```fish
 while clipnotify; notify-send "Clipboard Changed" -i notifications -t 300; end
 ```
+
+# build
+
+```
+zig build
+```
+
+output is in `zig-out/bin/clipnotify`
